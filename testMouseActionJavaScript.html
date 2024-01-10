@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Navbar Color</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<ul>
+    <li><a href="#" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Home</a></li>
+    <li><a href="#" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Products</a></li>
+    <li><a href="#" onmouseover="changeColor(this)" onmouseout="resetColor(this)">Contact</a></li>
+</ul>
+
+<!-- JavaScript to change color -->
+<script>
+    function changeColor(link) {
+        // Change the color on mouse hover
+        link.style.color = 'orange';  // You can replace 'orange' with your desired color
+        link.style.backgroundColor = 'red'; 
+    }
+
+    function resetColor(link) {
+        // Reset the color on mouse out
+        link.style.color = '';
+        link.style.backgroundColor = ''; 
+    }
+</script>
+
+</body>
+</html>
